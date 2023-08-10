@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <div class="flex flex-row gap-2 justify-around p-10">
+        <form action="/login" class="rounded p-4 shadow flex flex-col gap-4">
+            <h2 class="text-3xl">Login</h2>
+            <div class="flex flex-col">
+                <label for="">Email:</label>
+                <input type="text" class="border-2 rounded">
+            </div>
+            <div class="flex flex-col">
+                <label for="">Password:</label>
+                <input type="password" class="border-2 rounded">
+            </div>
+            <div class="form-label">
+                <input class="bg-green-300 rounded py-2 px-4" type="submit" value="login">
+            </div>
+        </form>
+        <form action="/register" class="rounded p-4 shadow flex flex-col gap-4">
+            <h2 class="text-3xl">Register</h2>
+            <div class="flex flex-col">
+                <label for="">First Name:</label>
+                <input type="text" class="border-2 rounded">
+            </div>
+            <div class="flex flex-col">
+                <label for="">Last Name:</label>
+                <input type="text" class="border-2 rounded">
+            </div>
+            <div class="flex flex-col">
+                <label for="">Email:</label>
+                <input type="text" class="border-2 rounded">
+            </div>
+            <div class="flex flex-col">
+                <label for="">Password:</label>
+                <input type="password" class="border-2 rounded">
+            </div>
+            <div class="form-label">
+                <input class="bg-green-300 rounded py-2 px-4" type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
